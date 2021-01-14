@@ -1,3 +1,4 @@
+import { ViewChild, ElementRef } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +12,6 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

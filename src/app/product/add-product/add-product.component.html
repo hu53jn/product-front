@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-header">New Product</div>
+  <div class="card-body">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <div class="form-group col-12">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" #prodName="ngModel" ngModel name="Name" required autocomplete="off" minlength="5">
+        <span class="error-block" *ngIf="!prodName.valid && prodName.touched">
+          <!-- <span *ngIf="prodName.errors.required" class="error-block">Please provide Name</span> -->
+          <span class="error-block">Please provide Name</span>
+          <!-- <span *ngIf="prodName.errors.minlength" class="error-block">Minimum length is 5 characters!</span> -->
+        </span>
+      </div>
+      <div class="form-group col-12">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" ngModel name="Type" required autocomplete="off">
+      </div>
+      <div class="form-group col-12">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" ngModel name="Price" autocomplete="off" required>
+      </div>
+      <div class="form-group col-12">
+        <button type="submit" class="btn btn-primary mr-2">Save</button>
+        <button type="reset" class="btn btn-primary">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

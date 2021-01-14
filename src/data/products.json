@@ -1,0 +1,42 @@
+[
+  {
+    "Id" : 1,
+    "Discount" : 1,
+    "Name" : "Vila Marija",
+    "Type": "House",
+    "Price": 16000,
+    "Image": "image-1"
+  },
+  {
+    "Id" : 2,
+    "Discount" : 1,
+    "Name" : "Vila Marija",
+    "Type": "House",
+    "Price": 17000,
+    "Image": "image-1"
+  },
+  {
+    "Id" : 3,
+    "Discount" : 0,
+    "Name" : "Vila Marija",
+    "Type": "House",
+    "Price": 12000,
+    "Image": "image-1"
+  },
+  {
+    "Id" : 2,
+    "Discount" : 0,
+    "Name" : "Vila Marija",
+    "Type": "House",
+    "Price": 17000,
+    "Image": "image-1"
+  },
+  {
+    "Id" : 3,
+    "Discount" : 0,
+    "Name" : "Vila Marija",
+    "Type": "House",
+    "Price": 12000,
+    "Image": "image-1"
+  }
+]

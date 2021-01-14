@@ -1,13 +1,19 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4 p-3">
-    <div class="card">
-      <img class="product-image" src="../../../assets/images/defaultImage.png">
-      <div class="card-body p-2">
-        <h1>{{Product.Type}}</h1>
-        <h2>{{Product.Price}}</h2>
-        <h2>{{Product.Name}}</h2>
-      </div>
-    </div>
+<div class="card">
+  <div class="card-img-wrapper">
+    <img src="../../../assets/images/defaultImage.png" style="width: 100%;">
+    <img *ngIf="!product.Image" src="../../../assets/images/defaultImage.png" style="width: 100%;">
+    <ul class="list-inline text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn btn-danger" routerLink="/product-detail/{{product.Id}}"><i class="fas fa-edit"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-danger"><i class="fas fa-user"></i></button>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body p-2">
+    <h1>{{product.Type}}</h1>
+    <h2>{{product.Price}}</h2>
+    <h2>{{product.Name}}</h2>
   </div>
 </div>
-
